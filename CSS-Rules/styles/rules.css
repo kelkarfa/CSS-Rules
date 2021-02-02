@@ -40,6 +40,8 @@ header img {
     text-align: center;
     color: brown;
     padding: .5em 0;
+    text-shadow: 3px 3px 3px;
+    
 }
 
 
@@ -49,10 +51,15 @@ aside {
     float:right;
     padding: 1.5em .5em 1.5em .5em;
 }
-img {
+.mobile {
     width: 200px;
     height: 150px;
     padding-bottom: .5em;
+    opacity: 25%;
+    border: 1px solid #DB0DE8;
+}
+.mobile:hover {
+    opacity: 100%;
 }
 .paint {
     font-family: Arial, Helvetica, sans-serif;
@@ -70,6 +77,7 @@ article {
     padding: 20px 20px 20px 20px;
     column-count: 3;
     column-gap: 35px;
+    column-rule: 1px solid brown;
     
 }
 .font {
@@ -79,11 +87,17 @@ article {
 #key {
     color: burlywood;
 }
+#key:first-child::first-letter{font-size: 150%;}
 #cent {
     color: cornflowerblue;
 }
+
 #last {
     color: chartreuse;
+}
+.color {
+    clear: left;
+    
 }
 
 
